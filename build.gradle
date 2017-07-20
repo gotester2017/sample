@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'com.sample.WebService'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile "com.google.code.gson:gson:2.8.0"
+    testCompile "junit:junit:4.12"
+}
+
+jar {
+    baseName = 'sample'
+    version =  '0.1.0'
+}
